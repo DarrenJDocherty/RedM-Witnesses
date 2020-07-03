@@ -15,7 +15,7 @@ Citizen.CreateThread(function()
         if IsPedShooting(PlayerPedId()) then
             local retval, target = GetEntityPlayerIsFreeAimingAt(PlayerId())
 
-            if GetPedType(target) == 4 or GetPedType(target) == 5 or GetPedType(entity) == 2 then
+            if GetPedType(target) == 4 or GetPedType(target) == 5 or GetPedType(target) == 2 then
 				local random = math.random(1, 100)
 
 				if random <= 30 then -- 3/10 chance a witness will see player
