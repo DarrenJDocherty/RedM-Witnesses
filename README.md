@@ -28,6 +28,11 @@ AddEventHandler("Witness:CheckJob", function(players, coords)
     end
 end)
 ```
+...and open client.lua and replace line 5 with the following:
+
+```
+TriggerEvent("vorp:Tip", 'A witness needs help!', 3000)
+```
 
 # License 
 
